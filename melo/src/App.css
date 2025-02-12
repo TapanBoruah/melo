@@ -1,0 +1,665 @@
+.background{
+    background:url("./modals/images/bg.jpg");
+    background-size: cover;
+    
+}
+header{
+    position: relative;
+    width:98.9vw;
+    display: flex;
+    background-color: #2b417d;
+    gap:10vw;
+    height:8vh;
+    z-index: 2000;
+}
+header .hamburger img{
+    position: relative;
+    top:2vh;
+    left:1.5vw;
+    height:5vh;
+    color:white;
+}
+header .hamburger:hover{
+    scale:1.1;
+}
+header .logo{
+    border-radius: 50%;
+}
+header .title{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color:white;
+}
+header nav {
+    display: flex;
+    gap:4vw;
+    position: relative;
+    top:2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vh;
+}
+header nav a{
+    text-decoration: none;
+    color:white;
+}
+header nav .join{
+    font-size:4vh;
+}
+header nav button{
+    height:5vh;
+    width:4.3vw;
+    border:2px solid blue;
+    border-radius:43%;
+    position: relative;
+    top:-0.5vh;
+    background-color:rgb(0, 183, 255);
+}
+header nav a:hover{
+    color:yellow;
+}
+header nav button:hover{
+    scale:1.1;
+}
+
+header nav button a:is(:focus){
+    border:2px solid transparent;
+    height:7vh;
+    width:8vw;
+    border-radius:43%;
+    transition: all 0.1s ease;
+    background: linear-gradient(#0a0adc,#121266)
+    padding-box,linear-gradient(45deg,rgb(230, 230, 8),red)border-box;
+    scale: 1.4;
+
+}
+.sidebar{
+    height:100%;
+    width:250px;
+    opacity:1;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(73,82,176,0.62);
+    backdrop-filter: blur(80px);
+    border-radius: 16px;
+    transition:transform 0.5s ease;
+    padding-top: 1vh;
+    margin:10px;
+    z-index: 30000;
+}
+.sidebar .logo2{
+    height:50px;
+    width:50px;
+    position: relative;
+    left:10px;
+    border-radius: 50%;
+}
+.sidebar .title1{
+    position: relative;
+    top:20px;
+    left:40px;
+    font-size: 26px;
+    font-weight: 1000;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(23, 5, 228);
+}  
+.sidebar .navlist{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height:40px;
+    gap:10px;
+    width:100%;
+    margin-top:50px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+.sidebar .navlist li {
+    height:40px;
+    width: 100%;
+    border:1px solid rgba(73, 82, 176, 0.32);
+    border:hidden;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+  }
+.sidebar .navlist li:hover{
+    background: #3a86ff;
+  }
+.sidebar .navlist li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  
+  }
+.sidebar .nestednav{
+    list-style:circle;
+    padding-left: 120px;
+    position: relative;
+    opacity: 1; 
+}
+.sidebar .navlist .nestednav li {
+    height:20px;
+    width:100%;
+    border:1px solid rgba(73, 82, 176, 0.32);
+    border:hidden;
+    text-align: center;
+}
+.sidebar .nestednav li:hover{
+    background: #3a86ff;
+  }
+
+.close1{
+     position:absolute;
+     left:220px;
+     font-size:23px;
+     border:1px solid rgba(73, 82, 176, 0.32);
+     border-radius:50%;
+}
+.content{
+    display:flex ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.content h2{
+    position: absolute;
+    left:18vw;
+    top:13vh;
+    font-size:2vw;
+    animation: 7s zoom-in;
+    animation-delay: 1s;
+}
+@keyframes  zoom-in {
+    from{
+        scale:0.4;
+    }to{
+        scale:1;
+    }
+}
+.content h1{
+    position: absolute;
+    left:25vw;
+    top:18vh;
+    font-size:3.5vw;
+    animation:10s fade-in;
+    animation-delay: 1s;
+}
+@keyframes  fade-in {
+    from{
+        opacity: 0;
+        scale:1;
+    }to{
+        opacity: 1;
+        scale:1;
+    }
+    
+}
+.content p{
+    position:absolute;
+    left:35vw;
+    top:28vh;
+    font-size: 1.5vw;
+}
+.nitimg{
+    height:55vh;
+    width:45vw;
+}
+.nitimg img{
+    position: relative;
+    top:37vh;
+    left:3vw;
+    height:55vh;
+    width:45vw;
+    border-radius:10%;
+    transition: 1s linear;
+}
+.nitimg img:hover{
+    transform: scale(1.05);
+}
+.music{
+    position: relative;
+    top:-18vh;
+    left:50vw;
+    height:55vh;
+    width:45vw;
+    border: 2px solid #2b357c;
+    background-color: #2b357c;
+    border-radius: 10%;
+    color:white;
+}
+.music p{
+    position: relative;
+    top:-6.5vh;
+    align-self: center;
+    padding:1.5vw;
+    font-size: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.about1{
+    height:85vh;
+    width:38vw;
+    position:relative;
+    top:-10vh;
+    margin-top:8vh;
+    left:6vw;
+    text-align: center;
+    border-radius: 10%;
+    border:2px solid rgb(66, 65, 65);
+    background-color: rgb(66, 65, 65);
+    opacity: 0.9;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+@keyframes  appear {
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
+.about1 h1{
+    position: relative;
+    top:-5vh;
+    font-size:4vw;
+    color:#6476f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about1 p{
+    position: relative;
+    top:-13vh;
+    padding:2vh;
+    color:white;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fest{
+    height: 75vh;
+    width:45vw;
+    position: relative;
+    top:-100vh;
+    left:50vw;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+    
+}
+.fest h1{
+    position: relative;
+    top:3vh;
+    left:10vw;
+    width:20vw;
+    font-size:4vw;
+    color:blue;
+    -webkit-text-stroke:1px #fff;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fest p{
+    font-size: 2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top:9vh;
+    font-weight:bolder;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(233, 233, 237);
+}
+/* General Styles */
+.blackpage {
+    width:98.9vw;
+    height:200vh;
+    position:relative;
+    top:-80vh;
+    background-color: #030303;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+
+/* Faculty Coordinator Section */
+.faculty-container {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.faculty-container h1 {
+    font-size: 6vh;
+    padding-top: 20vh;;
+    margin-bottom: 8vh;
+    color:white;
+}
+
+.faculty-container h2 {
+    font-size: 4vh;
+    text-decoration: underline;
+    color: rgb(8, 0, 228);
+}
+
+.faculty-img {
+    width: 12vw;
+    height: 28vh;
+    border-radius: 90px;
+    margin-top: 4vh;
+}
+.faculty-container h4{
+    font-size: 4vh;;
+    color: white;
+}
+.faculty-container p{
+    color:white;
+}
+/* Student Coordinators Section */
+.student-container {
+    text-align: center;
+    width: 80%;
+}
+
+.student-container h2 {
+    position:relative;
+    left:10vw;
+    font-size: 4vh;
+    text-decoration: underline;
+    color: rgb(8, 0, 228);
+    margin-top:15vh;
+    margin-bottom: 4vh;
+}
+
+/* Student Card Layout */
+.student-card {
+    position: relative;
+    left:10vw;
+    display: inline-block;
+    width: 20vw;
+    margin: 4vh;
+    text-align: center;
+
+}
+.student-card h5{
+    color:white;
+}
+.student-card p{
+    color:white;
+}
+.student-img {
+    width: 12vw;
+    height: 28vh;
+    border-radius: 90px;
+}
+
+.student-card h5 {
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+.contact{
+    position: absolute;
+    top:416vh;
+    background: #030303;
+    height:85vh;
+    width:99vw;
+}
+.contact h1{
+    color:White;
+    text-align: center;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left:0;
+    top:0;
+}
+.modal-content {
+    height:100vh;
+    overflow-y: scroll;
+}
+.close {
+      position: relative;
+      left:95vw;
+      top:5vh;
+      font-size: 8vh;    
+      font-weight: bold;
+}
+.close:hover{
+      cursor: pointer;     
+}
+   
+.modal-content h2{
+    position: relative;
+    left:43vw;
+    top:-8vh;
+    width:30vw;
+    font-size:4vw ;
+    color:#0a0adc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:underline;
+}
+.photos1{
+    position:relative;
+    top:-15vh; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2vw;
+    padding:2vw;
+}
+.photos1.images{
+    cursor: pointer;
+    height:20vh;
+    width:30vw;
+}
+.photos1 .images img{
+    height:40vh;
+    width:30vw;
+    border:2px solid white;
+    border-radius: 10%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: 1s linear;
+}
+.photos1 .images img:hover{
+       transform: scale(1.1);
+}
+.popup{
+    position: absolute;
+    left:0; top:0;
+    background: rgba(0, 0, 0, 0.9);
+    height:100vh;
+    width: 100%;
+    z-index: 100;   
+  }
+.popup img{
+       position: absolute;
+       top:10%;
+       left:19%;
+       height:84vh;
+       width:60vw;
+       border:5px solid white;
+       border-radius: 5px;
+}
+.popup span{
+      position:relative;
+      top:10%;
+      left:77%;
+      font-size: 40px;
+      font-weight: bolder;
+      color:white;
+      cursor: pointer;
+      z-index:100;
+}
+.videos1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2vw;
+    padding:2vw;
+}
+.videos1.videos{
+    cursor: pointer;
+     height:40vh;
+     width:30vw;
+}
+
+.videos1 .videos video{
+    height:40vh;
+    width:30vw;
+    border:2px solid white;
+    border-radius: 10%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: 1s linear;
+    object-fit: cover;
+}
+footer{
+    width:99vw;
+    height:10vh;
+    text-align: center;
+    font-size:2vw;
+    color:white;
+    background-color: #2b417d;
+}
+
+@media only screen and (max-width:768px) {
+    header{
+        position: fixed;
+        z-index: 10000;
+        width:100vw;
+        display: flex;
+        gap:6vw;
+    }
+    header a{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    header .hamburger img{
+        height:5vh;
+        width:9vw;
+    }
+    header img{
+        position: relative;
+        top:1vh;
+        left:70vw;
+        height: 6vh;
+        width:13vw;
+    }
+    header .title{
+        font-size:30px;
+        position: relative;
+        right:15vw;
+    }
+    header .title .icon1{
+        position: relative;
+        top:2vh;
+        display: none;
+    }
+    .content h2{
+        position: relative;
+        top:10vh;
+        font-size: 5vw;
+        width:90vw;
+        left:5vw;
+        text-align: center;
+        
+        
+    }
+    .content h1{
+        position:absolute;
+        top:26vh;
+        left:4vw;
+        width:40vw;
+        font-size: 7vh;
+
+    }
+    .content p{
+        position:absolute;
+        top:75vh;
+        font-size: 4vw;
+        left:8vw;
+    }
+    .nitimg img{
+        height:50vh;
+        width:93vw;
+        opacity: 0.5;
+        position: relative;
+        top:15vh;
+    }
+    .music{
+        position: relative;
+        top:16vh;
+        left:15vw;
+        height:10vh;
+        width:65vw;
+        text-align: center;
+    }
+    .music p{
+        position: absolute;
+        top:0.5vh;
+        margin:0;
+        font-size:15px;
+    }
+    .music #para2{
+        display: none;
+    }
+    .about1{
+        position: relative;
+        top:12vh;
+        left:1vw;
+        height:95vh;
+        width:96vw;
+        border-radius: 0;
+    }
+    .about1 h1{
+        font-size: 15vw;
+    }
+    .about1 p{
+        font-size: 3.3vh;
+    }
+    .fest{
+        position: relative;
+        top:13vh;
+        left:6vw;
+        width:90vw;
+    }
+    .fest h1{
+        font-size: 15vw;
+        width:70vw;
+
+    }
+    .fest p{
+        position: relative;
+        bottom:15vh;
+        font-size: 8vw;
+    }
+    .blackpage{
+        position: relative;
+        top:25vh;
+    }
+    .team{
+        position: relative;
+        left:15vw;
+        top:15vh;
+        width:80vw;
+    }
+    .team h1{
+        font-size: 4vh;
+    }
+    .team h2{
+        position: relative;
+        left:-6vw;
+        font-size: 3vh;
+        text-align: center;
+    } 
+    footer{
+        position: relative;
+        top:100vh;
+        font-size: 3vh;
+    }
+     
+}
